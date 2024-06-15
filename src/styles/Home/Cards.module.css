@@ -1,0 +1,43 @@
+.cardsContainer {
+    display: flex;
+    margin-top: 90px;
+    margin-left: 280px;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+
+}
+
+.card {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 325px;
+    height: 200px;
+    padding: 20px;
+
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    font-size: 1.2em;
+    color: #777;
+}
+
+
+
+@media (max-width: 768px) {
+    .cardsContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
