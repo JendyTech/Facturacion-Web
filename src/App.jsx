@@ -1,14 +1,13 @@
-import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import '@/styles/MainDesign/App.css'
-import Navbar from '@/components/MainLayout/Navbar'
-import Sidebar from '@/components/MainLayout/Sidebar'
-import Home from '@/components/Home/Home'
-import Settings from '@/components/Settings/Settings'
-import Reports from '@/components/Reports/Reports'
-import Products from '@/components/Products/Products'
-import Invoice from '@/components/Invoice/Invoice'
-import Clients from '@/components/Clients/Clients'
+import Navbar from '@/Pages/MainLayout/Navbar'
+import Sidebar from '@/Pages/MainLayout/Sidebar'
+import Home from '@/Pages/Home/Home'
+import Settings from '@/Pages/Settings/Settings'
+import Reports from '@/Pages/Reports/Reports'
+import Products from '@/Pages/Products/Products'
+import Invoice from '@/Pages/Invoice/Invoice'
+import Clients from '@/Pages/Clients/Clients'
 
 
 
