@@ -1,0 +1,68 @@
+/* Añadimos Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+.sidebar {
+  width: 280px;
+  height: 100%;
+  background-color: #ffffff;
+  color: #333333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: width 0.3s ease; 
+}
+
+.sidebarHeader {
+  padding: 20px 25px;
+  font-size: 24px;
+  font-weight: 600;
+  border-bottom: 1px solid #eeeeee;
+  color: #555555;
+}
+
+.sidebarMenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebarMenu li {
+  cursor: pointer;
+}
+
+.sidebarLink {
+  padding: 15px 25px;
+  color: #333333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.6s ease;
+}
+
+.sidebarLink:hover {
+  background-color: #f5f5f5;
+}
+
+.sidebarMenu li.active .sidebarLink {
+  background-color: #f0f0f0; 
+}
+
+.sidebarMenu li:active .sidebarLink {
+  background-color: #e0e0e0;
+}
+
+.sidebarIcon {
+  margin-right: 12px; 
+}
+
+
+.sidebarLink:hover {
+  color: inherit;
+}
+
+.sidebarIcon svg {
+  font-size: 18px; 
+}
