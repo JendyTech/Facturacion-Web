@@ -1,5 +1,4 @@
 import MainLayout from '@/Pages/MainLayout/MainLayout'
-import React from 'react'
 
 function Invoice() {
   return (
