@@ -9,6 +9,7 @@ import Invoice from '@/Pages/Invoice/Invoice'
 import Clients from '@/Pages/Clients/Clients'
 import Option1 from '@/Pages/Invoice/components/Option1'
 import Option2 from '@/Pages/Invoice/components/Option2'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 

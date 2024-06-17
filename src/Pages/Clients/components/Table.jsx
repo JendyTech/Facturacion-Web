@@ -1,9 +1,13 @@
+/* eslint-disable no-mixed-spaces-and-tabs */
+/* eslint-disable react/prop-types */
 import { useState, useEffect } from 'react';
 import DataTable from 'react-data-table-component';
 import { getAllClients } from '@/database/GET/getAllClients';
 
 function Table() {
-    const [clients, setClients] = useState([]);
+
+   
+    const [clients, setClients] = useState([])
 
     useEffect(() => {
         const getData = async () => {
@@ -77,7 +81,7 @@ function Table() {
                 paginationPerPage={7}
                 paginationRowsPerPageOptions={[3, 4, 5, 6, 7]}
                 highlightOnHover
-                selectableRows
+                selectableRows  
                 style={{ flex: 1 }} // Enable flex for proportional distribution
             />
         </div>
