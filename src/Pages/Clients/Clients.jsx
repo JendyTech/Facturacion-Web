@@ -1,14 +1,26 @@
 import Table from "@/Pages/Clients/components/Table";
 import MainLayout from "@/Pages/MainLayout/MainLayout";
-import SearchBar from './../MainLayout/components/SearchBar';
+import SearchBar from '@/Pages/MainLayout/components/SearchBar';
+import styles from '@/styles/Client/Client.module.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function Clients() {
+
+  const navigate = useNavigate();
+
+  const handleAddClientClick = () => {
+    navigate('/add-client');
+  };
+
   return (
     <div>
       <MainLayout>
-        <div style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
-        <h2>Client</h2>
-        <SearchBar />
+        <div className={styles.ClientHeader}>
+          <h2>Client</h2>
+          <div className={styles.ClientAddButton}>
+            <button className={styles.AddButton} onClick={handleAddClientClick}>Añadir Cliente</button>
+            <SearchBar />
+          </div>
         </div>
         <Table />
       </MainLayout>

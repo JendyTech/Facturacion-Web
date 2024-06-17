@@ -9,6 +9,8 @@ import Invoice from '@/Pages/Invoice/Invoice'
 import Clients from '@/Pages/Clients/Clients'
 import Option1 from '@/Pages/Invoice/components/Option1'
 import Option2 from '@/Pages/Invoice/components/Option2'
+import ProductForm from '@/Pages/Products/components/ProductForm'
+import ClientForm from '@/Pages/Clients/components/ClientForm'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -22,7 +24,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/add-product" element={<ProductForm />} />
           <Route path="/clients" element={<Clients />} />
+          <Route path="/add-client" element={<ClientForm />} />
           <Route path="/suppliers" element={<Suppliers />} />
           <Route path="/invoice" element={<Invoice />} />
           <Route path="/reports" element={<Reports />} />

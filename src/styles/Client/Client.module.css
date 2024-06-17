@@ -1,0 +1,21 @@
+.ClientHeader{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    
+}
+
+.ClientAddButton{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.AddButton{
+    width: 150px;
+    border-radius: 7px;
+    background: rgb(44, 44, 44);
+    color: white;
+}
