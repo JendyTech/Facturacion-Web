@@ -7,7 +7,6 @@ function Navbar() {
   return (
     <div className={styles.navbar}>
             <div className={styles.searchContainer}>
-                <SearchBar />
             </div>
             <div className={styles.userContainer}>
                 <FaUserCircle className={styles.userIcon} />
