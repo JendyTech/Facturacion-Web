@@ -1,6 +1,13 @@
+import React from 'react'
+import MainLayout from '@/Pages/MainLayout/MainLayout'
+
 function Reports() {
   return (
-    <div>Reports</div>
+    <div>
+      <MainLayout>
+        <h2>Reports</h2>
+      </MainLayout>
+    </div>
   )
 }
 

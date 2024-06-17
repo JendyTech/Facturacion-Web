@@ -1,8 +1,13 @@
+import MainLayout from '@/Pages/MainLayout/MainLayout'
 import React from 'react'
 
 function Invoice() {
   return (
-    <div>Invoice</div>
+    <div>
+      <MainLayout>
+        <h2>Invoice</h2>
+      </MainLayout>
+    </div>
   )
 }
 
