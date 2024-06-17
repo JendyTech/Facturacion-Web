@@ -1,8 +1,15 @@
-import React from 'react'
+import MainLayout from "../MainLayout/MainLayout"
+import Table from "./components/Table"
 
 function Products() {
   return (
-    <div>Products</div>
+    <div>
+      <MainLayout>
+        <h2>Products</h2>
+        <Table />
+      </MainLayout>
+    
+    </div>
   )
 }
 

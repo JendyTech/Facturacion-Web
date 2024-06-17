@@ -1,6 +1,5 @@
-import React from 'react'
 import styles from '@/styles/MainLayout/Navbar.module.css'
-import SearchBar from '@/Pages/MainLayout/SearchBar'
+import SearchBar from '@/Pages/MainLayout/components/SearchBar'
 import { FaUserCircle } from 'react-icons/fa'
 
 function Navbar() {
