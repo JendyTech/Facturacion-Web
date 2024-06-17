@@ -1,7 +1,6 @@
 .cardsContainer {
     display: flex;
-    margin-top: 90px;
-    margin-left: 280px;
+    padding-top: 10px;
     justify-content: center;
     text-align: center;
     gap: 30px;
