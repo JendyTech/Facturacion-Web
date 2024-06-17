@@ -1,3 +1,5 @@
+/* eslint-disable no-mixed-spaces-and-tabs */
+/* eslint-disable react/prop-types */
 import { useState, useEffect } from 'react';
 import DataTable from "react-data-table-component";
 import { getAllClients } from '@/database/GET/getAllClients'
@@ -5,8 +7,7 @@ import { getAllClients } from '@/database/GET/getAllClients'
 
 function Table() {
 
-    const ExpandedComponent = ({ data }) => <pre>{JSON.stringify(data, null, 2)}</pre>;
-
+   
     const [clients, setClients] = useState([])
 
     useEffect(() => {
@@ -65,7 +66,7 @@ function Table() {
                 highlightOnHover
                 selectableRows  
                 expandableRows
-			    expandableRowsComponent={ExpandedComponent}
+			    
             />
         </div>
     )
