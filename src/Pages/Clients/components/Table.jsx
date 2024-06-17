@@ -83,9 +83,6 @@ function Table() {
                 paginationRowsPerPageOptions={[3, 4, 5, 6, 7]}
                 highlightOnHover
                 selectableRows  
-                expandableRows
-			    
-                selectableRows
                 style={{ flex: 1 }} // Enable flex for proportional distribution
             />
         </div>
