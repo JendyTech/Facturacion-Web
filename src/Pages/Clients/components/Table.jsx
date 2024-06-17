@@ -8,7 +8,6 @@ function Table() {
 
    
     const [clients, setClients] = useState([])
-    const [clients, setClients] = useState([]);
 
     useEffect(() => {
         const getData = async () => {
