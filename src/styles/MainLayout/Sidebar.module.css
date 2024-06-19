@@ -1,6 +1,7 @@
 /* Añadimos Font Awesome */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 
+/* Estilos base del sidebar */
 .sidebar {
   grid-area: sidebar;
   width: 230px;
@@ -13,7 +14,7 @@
   overflow-y: auto;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  transition: width 0.3s ease; 
+  transition: width 0.3s ease;
   border-right: 1px solid #dfdfdf;
 }
 
@@ -49,7 +50,7 @@
 }
 
 .sidebarMenu li.active .sidebarLink {
-  background-color: #f0f0f0; 
+  background-color: #f0f0f0;
 }
 
 .sidebarMenu li:active .sidebarLink {
@@ -57,16 +58,15 @@
 }
 
 .sidebarIcon {
-  margin-right: 12px; 
+  margin-right: 12px;
 }
-
 
 .sidebarLink:hover {
   color: inherit;
 }
 
 .sidebarIcon svg {
-  font-size: 18px; 
+  font-size: 18px;
 }
 
 .subMenu {

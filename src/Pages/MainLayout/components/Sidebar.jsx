@@ -15,7 +15,7 @@ function Sidebar() {
   return (
     <div className={styles.sidebar}>
       <div className={styles.sidebarHeader}>
-        Sidebar
+        Inventario
       </div>
       <ul className={styles.sidebarMenu}>
         <li className={activeLink === '/' ? 'active pressed' : ''}>
@@ -31,6 +31,11 @@ function Sidebar() {
         <li className={activeLink === '/clients' ? 'active pressed' : ''}>
           <Link to="/clients" className={styles.sidebarLink} onClick={() => setActiveLink('/clients')}>
             <FaUsers className={styles.sidebarIcon} /> Clients
+          </Link>
+        </li>
+        <li className={activeLink === '/suppliers' ? 'active pressed' : ''}>
+          <Link to="/suppliers" className={styles.sidebarLink} onClick={() => setActiveLink('/suppliers')}>
+            <FaTruck className={styles.sidebarIcon} /> Suppliers
           </Link>
         </li>
         <li className={activeLink === '/invoice' ? 'active pressed' : ''}>
@@ -63,11 +68,7 @@ function Sidebar() {
             <FaCog className={styles.sidebarIcon} /> Settings
           </Link>
         </li>
-        <li className={activeLink === '/suppliers' ? 'active pressed' : ''}>
-          <Link to="/suppliers" className={styles.sidebarLink} onClick={() => setActiveLink('/suppliers')}>
-            <FaTruck className={styles.sidebarIcon} /> Suppliers
-          </Link>
-        </li>
+  
 
       </ul>
     </div>

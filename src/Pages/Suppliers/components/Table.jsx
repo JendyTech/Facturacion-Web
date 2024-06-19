@@ -2,17 +2,15 @@
 /* eslint-disable react/prop-types */
 import { useState, useEffect } from 'react';
 import DataTable from 'react-data-table-component';
-import { getAllClients } from '@/database/GET/getAllClients';
+import { getAllSuppliers } from '@/database/GET/getAllSuppliers';
 
 function Table() {
-
-   
-    const [clients, setClients] = useState([])
+    const [suppliers, setSuppliers] = useState([]);
 
     useEffect(() => {
         const getData = async () => {
-            const data = await getAllClients();
-            setClients(data);
+            const data = await getAllSuppliers();
+            setSuppliers(data);
         };
 
         getData();
@@ -21,54 +19,60 @@ function Table() {
     const columns = [
         {
             name: 'ID',
-            selector: (row) => row.id,
-            width: '50px', 
+            selector: (row) => row.id_suppliers,
+            width: '50px',
+            wrap: true,  // Allow text to wrap
         },
         {
             name: 'Nombre',
-            selector: (row) => row.name_client,
-            width: '175px',
+            selector: (row) => row.name_suppliers,
+            width: '150px',
+            wrap: true,
         },
         {
-            name: 'Apellido',
-            selector: (row) => row.lastname_client,
-            width: '175px',
-        },
-        {
-            name: 'Identificacion',
-            selector: (row) => row.identification_client,
+            name: 'Identificación',
+            selector: (row) => row.identification_suppliers,
             width: '120px',
+            wrap: true,
         },
         {
-            name: 'Telefono',
-            selector: (row) => row.phonenumber_client,
+            name: 'Teléfono',
+            selector: (row) => row.phone_suppliers,
             width: '120px',
+            wrap: true,
         },
         {
             name: 'Correo',
-            selector: (row) => row.email_client,
-            width: '200px',
-            cell: (row) => (
-                <div style={{ overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                    {row.email_client}
-                </div>
-            ),
-        },
-        {
-            name: 'Direccion',
-            selector: (row) => row.address_client,
+            selector: (row) => row.email_suppliers,
             width: '175px',
             cell: (row) => (
                 <div style={{ overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                    {row.address_client}
+                    {row.email_suppliers}
                 </div>
             ),
+            wrap: true,
         },
         {
-            name: 'Fecha de Creacion',
-            selector: (row) => row.created_date_client,
-            width: '140px',
-
+            name: 'Dirección',
+            selector: (row) => row.address_suppliers,
+            width: '175px',
+            cell: (row) => (
+                <div style={{ overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                    {row.address_suppliers}
+                </div>
+            ),
+            wrap: true,
+        },
+        {
+            name: 'Descripcion',
+            selector: (row) => row.description_suppliers,
+            width: '375px',
+            cell: (row) => (
+              <div style={{ overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                {row.description_suppliers}
+              </div>
+            ),
+            wrap: true,
         },
     ];
 
@@ -124,10 +128,10 @@ function Table() {
     };
 
     return (
-        <div>
+        <div style={{ overflowX: 'auto' }}>
             <DataTable
                 columns={columns}
-                data={clients}
+                data={suppliers}
                 customStyles={customStyles}
                 pagination
                 paginationPerPage={7}
@@ -135,9 +139,10 @@ function Table() {
                 highlightOnHover
                 selectableRows
                 noHeader
+                responsive
             />
         </div>
     );
-};
+}
 
 export default Table;
